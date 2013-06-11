@@ -1,23 +1,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include <conio.h>
-
-int count(int);
-
 using namespace std;
-
-int main()
-{
-   int counter;
-   
-   cout << "Vvedite celoye chislo, kotoroye ukashet na kol-vo chisel dlya vvoda: ";
-   cin >> counter;
-   cout << endl;
-   cout << endl << "Summa " << counter 
-   << " vvedennih chisel ravna: " << count(counter) << endl;
-   
-   return 0;
-}
 
 int count(int x)
 {
@@ -32,4 +16,17 @@ int count(int x)
     cout<<sum<<endl;
    getch();
    return sum;
+}
+
+int main()
+{
+   int counter;
+   
+   cout << "Vvedite celoye chislo, kotoroye ukashet na kol-vo chisel dlya vvoda: ";
+   cin >> counter;
+   cout << endl;
+   cout << endl << "Summa " << counter 
+   << " vvedennih chisel ravna: " << count(counter) << endl;
+   
+   return 0;
 }
